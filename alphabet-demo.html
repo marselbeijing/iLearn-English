@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демо - Алфавит | iLearn English</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .demo-nav {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .demo-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius-small);
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .demo-btn:hover {
+            background: #3498DB;
+        }
+        
+        .demo-btn.active {
+            background: var(--success-color);
+        }
+        
+        body {
+            padding-top: 100px;
+        }
+        
+        .demo-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-nav">
+        <strong>🧪 Демо Алфавита:</strong>
+        <button class="demo-btn" onclick="showAlphabetIntroDemo()">Изучение буквы</button>
+        <button class="demo-btn" onclick="showAlphabetQuizDemo()">Викторина</button>
+        <button class="demo-btn" onclick="showAlphabetMatchDemo()">Сопоставление</button>
+        <button class="demo-btn" onclick="showAlphabetSequenceDemo()">Последовательность</button>
+        <button class="demo-btn" onclick="showAlphabetCompleteDemo()">Завершение</button>
+        <a href="index.html" style="margin-left: auto; color: var(--primary-color); text-decoration: none;">← Назад к приложению</a>
+    </div>
+
+    <div class="demo-container">
+        <h1>Демонстрация изучения алфавита</h1>
+        <p>Выберите тип упражнения из навигации выше для просмотра.</p>
+        
+        <div id="demo-content" class="exercise-content">
+            <div class="alphabet-card">
+                <h2>Добро пожаловать! 👋</h2>
+                <p>Здесь вы можете посмотреть как работают различные типы упражнений для изучения английского алфавита.</p>
+                <p><strong>Особенности:</strong></p>
+                <ul style="text-align: left; max-width: 400px; margin: 0 auto;">
+                    <li>🎵 Озвучивание букв (Speech Synthesis)</li>
+                    <li>🎨 Интерактивные анимации</li>
+                    <li>📱 Адаптивный дизайн</li>
+                    <li>🎮 Игровые элементы</li>
+                    <li>📈 Визуальный прогресс</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="exercise-actions" id="demo-actions" style="display: none;">
+            <button class="check-btn" id="demo-check-btn">Демо кнопка</button>
+        </div>
+    </div>
+
+    <script>
+        // Демонстрационные данные
+        const demoData = {
+            alphabetIntro: {
+                type: 'alphabet-intro',
+                question: 'Изучите букву и её произношение:',
+                letter: 'A',
+                pronunciation: '[эй]',
+                example: 'Apple - яблоко',
+                sound: 'audio/letters/a.mp3'
+            },
+            alphabetQuiz: {
+                type: 'alphabet-quiz',
+                question: 'Выберите правильное произношение буквы A:',
+                letter: 'A',
+                options: ['[эй]', '[ай]', '[а]', '[е]'],
+                correct: 0,
+                explanation: 'Буква A произносится как [эй]'
+            },
+            alphabetMatch: {
+                type: 'alphabet-match',
+                question: 'Сопоставьте буквы с примерами:',
+                pairs: [
+                    {letter: 'A', example: 'Apple - яблоко'},
+                    {letter: 'B', example: 'Ball - мяч'},
+                    {letter: 'C', example: 'Cat - кот'}
+                ]
+            },
+            alphabetSequence: {
+                type: 'alphabet-sequence',
+                question: 'Расположите буквы в алфавитном порядке:',
+                letters: ['D', 'A', 'C', 'B'],
+                correct: ['A', 'B', 'C', 'D'],
+                explanation: 'Правильный порядок: A, B, C, D'
+            },
+            alphabetComplete: {
+                type: 'alphabet-complete',
+                question: 'Поздравляем! Вы изучили английский алфавит!',
+                description: 'Теперь вы знаете все 26 букв английского алфавита и их произношение.'
+            }
+        };
+
+        // Мини-версия класса приложения для демо
+        class AlphabetDemo {
+            constructor() {
+                this.sequenceAnswer = [];
+            }
+
+            showAlphabetIntro(exercise) {
+                const content = document.getElementById('demo-content');
+                content.innerHTML = `
+                    <div class="alphabet-card alphabet-intro-animation">
+                        <div class="question">${exercise.question}</div>
+                        <div class="alphabet-letter" data-letter="${exercise.letter}">${exercise.letter}</div>
+                        <div class="alphabet-pronunciation">${exercise.pronunciation}</div>
+                        <div class="alphabet-example">${exercise.example}</div>
+                        <button class="alphabet-sound-btn" title="Прослушать произношение">🔊</button>
+                        <button class="alphabet-next-btn">Понятно! Далее</button>
+                    </div>
+                `;
+
+                const soundBtn = content.querySelector('.alphabet-sound-btn');
+                const letter = content.querySelector('.alphabet-letter');
+                
+                soundBtn.addEventListener('click', () => {
+                    this.playLetterSound(exercise.letter);
+                    letter.style.animation = 'none';
+                    setTimeout(() => letter.style.animation = 'letterPulse 2s ease-in-out infinite', 10);
+                });
+
+                letter.addEventListener('click', () => {
+                    this.playLetterSound(exercise.letter);
+                });
+
+                document.getElementById('demo-actions').style.display = 'none';
+            }
+
+            showAlphabetQuiz(exercise) {
+                const content = document.getElementById('demo-content');
+                content.innerHTML = `
+                    <div class="question">${exercise.question}</div>
+                    <div class="alphabet-letter" style="font-size: 3rem; margin: 1rem 0;">${exercise.letter}</div>
+                    <div class="options">
+                        ${exercise.options.map((option, index) => `
+                            <button class="option" data-index="${index}">${option}</button>
+                        `).join('')}
+                    </div>
+                `;
+
+                content.querySelectorAll('.option').forEach(option => {
+                    option.addEventListener('click', () => {
+                        content.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+                        option.classList.add('selected');
+                        
+                        setTimeout(() => {
+                            const selectedIndex = parseInt(option.dataset.index);
+                            const isCorrect = selectedIndex === exercise.correct;
+                            
+                            content.querySelectorAll('.option').forEach((opt, idx) => {
+                                if (idx === exercise.correct) {
+                                    opt.classList.add('correct');
+                                } else if (opt.classList.contains('selected') && !isCorrect) {
+                                    opt.classList.add('incorrect');
+                                }
+                            });
+
+                            if (exercise.explanation) {
+                                setTimeout(() => {
+                                    const explanation = document.createElement('div');
+                                    explanation.style.cssText = `
+                                        background: #f8f9fa;
+                                        border-left: 4px solid var(--primary-color);
+                                        padding: 1rem;
+                                        margin-top: 1rem;
+                                        border-radius: 8px;
+                                        font-size: 0.9rem;
+                                        color: var(--text-secondary);
+                                    `;
+                                    explanation.innerHTML = `💡 ${exercise.explanation}`;
+                                    content.appendChild(explanation);
+                                }, 500);
+                            }
+                        }, 1000);
+                    });
+                });
+
+                document.getElementById('demo-actions').style.display = 'none';
+            }
+
+            showAlphabetMatch(exercise) {
+                const content = document.getElementById('demo-content');
+                content.innerHTML = `
+                    <div class="question">${exercise.question}</div>
+                    <div class="alphabet-matching">
+                        ${exercise.pairs.map((pair, index) => `
+                            <div class="match-pair" data-index="${index}">
+                                <div class="match-letter">${pair.letter}</div>
+                                <div class="match-example">${pair.example}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+
+                setTimeout(() => {
+                    content.querySelectorAll('.match-pair').forEach(pair => {
+                        pair.classList.add('correct');
+                    });
+                }, 2000);
+
+                document.getElementById('demo-actions').style.display = 'none';
+            }
+
+            showAlphabetSequence(exercise) {
+                this.sequenceAnswer = [];
+                const content = document.getElementById('demo-content');
+                
+                content.innerHTML = `
+                    <div class="question">${exercise.question}</div>
+                    <div class="sequence-drop-zone">
+                        ${exercise.correct.map((_, index) => `
+                            <div class="sequence-slot" data-position="${index}"></div>
+                        `).join('')}
+                    </div>
+                    <div class="sequence-container">
+                        ${exercise.letters.map((letter, index) => `
+                            <div class="sequence-letter" data-letter="${letter}" data-index="${index}">${letter}</div>
+                        `).join('')}
+                    </div>
+                `;
+
+                content.querySelectorAll('.sequence-letter').forEach(letter => {
+                    letter.addEventListener('click', () => {
+                        if (letter.classList.contains('selected')) return;
+                        
+                        const emptySlot = content.querySelector('.sequence-slot:not(.filled)');
+                        if (emptySlot) {
+                            emptySlot.textContent = letter.textContent;
+                            emptySlot.classList.add('filled');
+                            emptySlot.dataset.letter = letter.dataset.letter;
+                            letter.classList.add('selected');
+                            
+                            this.sequenceAnswer.push(letter.dataset.letter);
+                            
+                            if (this.sequenceAnswer.length === exercise.correct.length) {
+                                setTimeout(() => {
+                                    content.querySelectorAll('.sequence-slot').forEach((slot, index) => {
+                                        if (slot.dataset.letter === exercise.correct[index]) {
+                                            slot.classList.add('correct');
+                                        } else {
+                                            slot.classList.add('incorrect');
+                                        }
+                                    });
+                                }, 500);
+                            }
+                        }
+                    });
+                });
+
+                document.getElementById('demo-actions').style.display = 'none';
+            }
+
+            showAlphabetComplete(exercise) {
+                const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+                const content = document.getElementById('demo-content');
+                
+                content.innerHTML = `
+                    <div class="alphabet-complete">
+                        <div class="alphabet-complete-icon">🎉</div>
+                        <h2>${exercise.question}</h2>
+                        <p>${exercise.description}</p>
+                        <div class="alphabet-progress-visual">
+                            ${alphabet.map(letter => `
+                                <div class="progress-letter learned">${letter}</div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+
+                const letters = content.querySelectorAll('.progress-letter');
+                letters.forEach((letter, index) => {
+                    setTimeout(() => {
+                        letter.style.animation = 'letterLearned 0.5s ease-out';
+                    }, index * 50);
+                });
+
+                document.getElementById('demo-actions').style.display = 'none';
+            }
+
+            playLetterSound(letter) {
+                if ('speechSynthesis' in window) {
+                    const utterance = new SpeechSynthesisUtterance(letter);
+                    utterance.lang = 'en-US';
+                    utterance.rate = 0.7;
+                    utterance.pitch = 1.2;
+                    speechSynthesis.speak(utterance);
+                }
+            }
+        }
+
+        const demo = new AlphabetDemo();
+
+        // Функции для демонстрации
+        function showAlphabetIntroDemo() {
+            demo.showAlphabetIntro(demoData.alphabetIntro);
+            updateActiveButton(0);
+        }
+
+        function showAlphabetQuizDemo() {
+            demo.showAlphabetQuiz(demoData.alphabetQuiz);
+            updateActiveButton(1);
+        }
+
+        function showAlphabetMatchDemo() {
+            demo.showAlphabetMatch(demoData.alphabetMatch);
+            updateActiveButton(2);
+        }
+
+        function showAlphabetSequenceDemo() {
+            demo.showAlphabetSequence(demoData.alphabetSequence);
+            updateActiveButton(3);
+        }
+
+        function showAlphabetCompleteDemo() {
+            demo.showAlphabetComplete(demoData.alphabetComplete);
+            updateActiveButton(4);
+        }
+
+        function updateActiveButton(activeIndex) {
+            document.querySelectorAll('.demo-btn').forEach((btn, index) => {
+                btn.classList.toggle('active', index === activeIndex);
+            });
+        }
+    </script>
+</body>
+</html> 

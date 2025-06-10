@@ -1,0 +1,31 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E3F2FD;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#90CAF9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#42A5F5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect x="8" y="16" width="12" height="16" rx="3" fill="url(#blueGradient)" stroke="#fff" stroke-width="2"/>
+  <text x="14" y="28" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">1</text>
+  
+  <rect x="26" y="16" width="12" height="16" rx="3" fill="url(#blueGradient)" stroke="#fff" stroke-width="2"/>
+  <text x="32" y="28" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">2</text>
+  
+  <rect x="44" y="16" width="12" height="16" rx="3" fill="url(#blueGradient)" stroke="#fff" stroke-width="2"/>
+  <text x="50" y="28" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">3</text>
+  
+  <rect x="14" y="36" width="12" height="16" rx="3" fill="url(#blueGradient)" stroke="#fff" stroke-width="2"/>
+  <text x="20" y="48" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">4</text>
+  
+  <rect x="32" y="36" width="12" height="16" rx="3" fill="url(#blueGradient)" stroke="#fff" stroke-width="2"/>
+  <text x="38" y="48" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">5</text>
+  
+  <circle cx="14" cy="8" r="3" fill="url(#blueGradient)"/>
+  <circle cx="32" cy="8" r="3" fill="url(#blueGradient)"/>
+  <circle cx="50" cy="8" r="3" fill="url(#blueGradient)"/>
+  
+  <circle cx="20" cy="56" r="3" fill="url(#blueGradient)"/>
+  <circle cx="38" cy="56" r="3" fill="url(#blueGradient)"/>
+</svg> 

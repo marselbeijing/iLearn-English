@@ -1,0 +1,19 @@
+{
+  "name": "ilearn-english-telegram",
+  "version": "1.0.0",
+  "description": "Telegram Mini App для изучения английского языка",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server --port=3000",
+    "build": "npm run minify",
+    "minify": "terser js/app.js -o js/app.min.js && cleancss -o css/style.min.css css/style.css"
+  },
+  "keywords": ["telegram", "mini-app", "english", "learning", "education"],
+  "author": "iLearn English Team",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "terser": "^5.16.0",
+    "clean-css-cli": "^5.6.0"
+  }
+} 

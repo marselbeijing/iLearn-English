@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>iLearn English - Test Mode</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Дополнительные стили для тестового режима */
+        .test-mode-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #ff6b6b;
+            color: white;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+            z-index: 1000;
+        }
+        
+        body {
+            padding-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-mode-banner">
+        🧪 ТЕСТОВЫЙ РЕЖИМ - Для разработки без Telegram
+    </div>
+    
+    <div id="app">
+        <!-- Экран загрузки -->
+        <div id="loading-screen" class="screen active">
+            <div class="loading-content">
+                <div class="logo">
+                    <span class="logo-text">iLearn</span>
+                    <span class="logo-accent">English</span>
+                </div>
+                <div class="loading-spinner"></div>
+                <p class="loading-text">Загружаем ваши уроки...</p>
+            </div>
+        </div>
+
+        <!-- Главный экран -->
+        <div id="home-screen" class="screen">
+            <header class="header">
+                <div class="user-info">
+                    <div class="avatar" id="user-avatar">👤</div>
+                    <div class="user-details">
+                        <h3 id="user-name">Тестер</h3>
+                        <div class="user-stats">
+                            <span class="xp">⭐ <span id="user-xp">0</span> XP</span>
+                            <span class="streak">🔥 <span id="user-streak">0</span></span>
+                        </div>
+                    </div>
+                </div>
+                <button class="settings-btn" id="settings-btn">⚙️</button>
+            </header>
+
+            <main class="main-content">
+                <div class="progress-section">
+                    <h2>Общий прогресс</h2>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="overall-progress"></div>
+                        <span class="progress-text" id="progress-text">0%</span>
+                    </div>
+                </div>
+
+                <div class="levels-section">
+                    <h2>Выберите уровень</h2>
+                    <div class="levels-grid">
+                        <div class="level-card beginner" data-level="beginner">
+                            <div class="level-icon">🌱</div>
+                            <h3>Начальный</h3>
+                            <p>Базовая лексика и грамматика</p>
+                            <div class="level-progress">
+                                <div class="level-progress-bar">
+                                    <div class="level-progress-fill" style="width: 0%"></div>
+                                </div>
+                                <span class="level-progress-text">0/20</span>
+                            </div>
+                        </div>
+
+                        <div class="level-card intermediate locked" data-level="intermediate">
+                            <div class="level-icon">🌿</div>
+                            <h3>Средний</h3>
+                            <p>Времена и сложные конструкции</p>
+                            <div class="level-progress">
+                                <div class="level-progress-bar">
+                                    <div class="level-progress-fill" style="width: 0%"></div>
+                                </div>
+                                <span class="level-progress-text">0/25</span>
+                            </div>
+                            <div class="lock-icon">🔒</div>
+                        </div>
+
+                        <div class="level-card advanced locked" data-level="advanced">
+                            <div class="level-icon">🌳</div>
+                            <h3>Продвинутый</h3>
+                            <p>Идиомы и бизнес-английский</p>
+                            <div class="level-progress">
+                                <div class="level-progress-bar">
+                                    <div class="level-progress-fill" style="width: 0%"></div>
+                                </div>
+                                <span class="level-progress-text">0/30</span>
+                            </div>
+                            <div class="lock-icon">🔒</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="daily-goal">
+                    <h3>Ежедневная цель</h3>
+                    <div class="goal-progress">
+                        <div class="goal-icon">🎯</div>
+                        <div class="goal-details">
+                            <p>Выполните 3 урока</p>
+                            <div class="goal-bar">
+                                <div class="goal-fill" id="daily-goal-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Экран уроков -->
+        <div id="lessons-screen" class="screen">
+            <header class="lessons-header">
+                <button class="back-btn" id="lessons-back-btn">←</button>
+                <h2 id="level-title">Начальный уровень</h2>
+                <div class="level-progress-header">
+                    <span id="lessons-progress">0/20</span>
+                </div>
+            </header>
+
+            <div class="lessons-content">
+                <div class="lessons-grid" id="lessons-grid">
+                    <!-- Уроки будут генерироваться динамически -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Экран упражнения -->
+        <div id="exercise-screen" class="screen">
+            <header class="exercise-header">
+                <button class="back-btn" id="exercise-back-btn">←</button>
+                <div class="exercise-progress">
+                    <div class="exercise-progress-bar">
+                        <div class="exercise-progress-fill" id="exercise-progress-fill"></div>
+                    </div>
+                    <span class="exercise-count" id="exercise-count">1/10</span>
+                </div>
+                <div class="lives" id="lives">
+                    <span class="heart">💚</span>
+                    <span class="heart">💚</span>
+                    <span class="heart">💚</span>
+                </div>
+            </header>
+
+            <div class="exercise-content" id="exercise-content">
+                <!-- Содержимое упражнения будет генерироваться динамически -->
+            </div>
+
+            <div class="exercise-actions">
+                <button class="check-btn" id="check-btn" disabled>Проверить</button>
+            </div>
+        </div>
+
+        <!-- Экран результатов -->
+        <div id="results-screen" class="screen">
+            <div class="results-content">
+                <div class="results-icon" id="results-icon">🎉</div>
+                <h2 id="results-title">Отлично!</h2>
+                <div class="results-stats">
+                    <div class="stat">
+                        <span class="stat-value" id="correct-answers">8</span>
+                        <span class="stat-label">Правильных ответов</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="earned-xp">+50</span>
+                        <span class="stat-label">Опыта получено</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="lesson-time">2:30</span>
+                        <span class="stat-label">Время урока</span>
+                    </div>
+                </div>
+                <div class="results-actions">
+                    <button class="continue-btn" id="continue-btn">Продолжить</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Экран настроек -->
+        <div id="settings-screen" class="screen">
+            <header class="settings-header">
+                <button class="back-btn" id="settings-back-btn">←</button>
+                <h2>Настройки</h2>
+            </header>
+            <div class="settings-content">
+                <div class="setting-item">
+                    <label>Звуковые эффекты</label>
+                    <input type="checkbox" id="sound-toggle" checked>
+                </div>
+                <div class="setting-item">
+                    <label>Вибрация</label>
+                    <input type="checkbox" id="haptic-toggle" checked>
+                </div>
+                <div class="setting-item">
+                    <label>Ежедневные напоминания</label>
+                    <input type="checkbox" id="notifications-toggle" checked>
+                </div>
+                <div class="setting-item">
+                    <button class="reset-btn" id="reset-progress">Сбросить прогресс</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Заглушка для Telegram WebApp в тестовом режиме
+        window.Telegram = {
+            WebApp: {
+                ready: () => console.log('Telegram WebApp ready (test mode)'),
+                expand: () => console.log('Telegram WebApp expand (test mode)'),
+                themeParams: {
+                    bg_color: '#ffffff',
+                    text_color: '#000000'
+                },
+                initDataUnsafe: {
+                    user: {
+                        first_name: 'Тестер',
+                        username: 'test_user'
+                    }
+                },
+                HapticFeedback: {
+                    impactOccurred: (type) => console.log(`Haptic feedback: ${type}`),
+                    notificationOccurred: (type) => console.log(`Notification: ${type}`)
+                }
+            }
+        };
+    </script>
+    <script src="js/app.js"></script>
+</body>
+</html> 

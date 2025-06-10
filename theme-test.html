@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Тест темы | iLearn English</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .theme-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .theme-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        .theme-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        
+        .theme-btn.active {
+            background: var(--success-color);
+        }
+        
+        .test-section {
+            margin: 2rem 0;
+            padding: 1rem;
+        }
+        
+        .test-section h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body data-theme="light">
+    <div class="theme-switcher">
+        <button class="theme-btn active" onclick="setTheme('light')">☀️ Светлая</button>
+        <button class="theme-btn" onclick="setTheme('dark')">🌙 Темная</button>
+    </div>
+
+    <div id="app">
+        <div class="screen active">
+            <header class="header">
+                <div class="user-info">
+                    <div class="avatar">👤</div>
+                    <div class="user-details">
+                        <h3>Тест Пользователь</h3>
+                        <div class="user-stats">
+                            <span class="xp">⭐ 150 XP</span>
+                            <span class="streak">🔥 5</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="settings-btn">⚙️</button>
+            </header>
+
+            <main class="main-content">
+                <div class="test-section">
+                    <h3>🏠 Карточки уровней</h3>
+                    <div class="levels-grid">
+                        <div class="level-card beginner">
+                            <div class="level-icon">🌱</div>
+                            <h3>Начальный</h3>
+                            <p>Базовая лексика и грамматика</p>
+                            <div class="level-progress">
+                                <div class="level-progress-bar">
+                                    <div class="level-progress-fill" style="width: 60%"></div>
+                                </div>
+                                <span class="level-progress-text">12/20</span>
+                            </div>
+                        </div>
+
+                        <div class="level-card intermediate">
+                            <div class="level-icon">🌿</div>
+                            <h3>Средний</h3>
+                            <p>Времена и сложные конструкции</p>
+                            <div class="level-progress">
+                                <div class="level-progress-bar">
+                                    <div class="level-progress-fill" style="width: 30%"></div>
+                                </div>
+                                <span class="level-progress-text">7/25</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h3>🔤 Алфавитная карточка</h3>
+                    <div class="alphabet-card">
+                        <div class="question">Изучите букву и её произношение:</div>
+                        <div class="alphabet-letter">A</div>
+                        <div class="alphabet-pronunciation">[эй]</div>
+                        <div class="alphabet-example">Apple - яблоко</div>
+                        <button class="alphabet-sound-btn">🔊</button>
+                        <button class="alphabet-next-btn">Понятно! Далее</button>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h3>📚 Уроки</h3>
+                    <div class="lessons-grid">
+                        <div class="lesson-item completed">
+                            <div class="lesson-number">1</div>
+                            <div class="lesson-title">Алфавит A-F</div>
+                        </div>
+                        <div class="lesson-item current">
+                            <div class="lesson-number">2</div>
+                            <div class="lesson-title">Алфавит G-L</div>
+                        </div>
+                        <div class="lesson-item">
+                            <div class="lesson-number">3</div>
+                            <div class="lesson-title">Алфавит M-R</div>
+                        </div>
+                        <div class="lesson-item locked">
+                            <div class="lesson-number">4</div>
+                            <div class="lesson-title">Алфавит S-Z</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h3>❓ Варианты ответов</h3>
+                    <div class="options">
+                        <button class="option">Вариант 1</button>
+                        <button class="option selected">Вариант 2 (выбран)</button>
+                        <button class="option correct">Вариант 3 (правильный)</button>
+                        <button class="option incorrect">Вариант 4 (неправильный)</button>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h3>🎯 Ежедневная цель</h3>
+                    <div class="daily-goal">
+                        <h3>Ежедневная цель</h3>
+                        <div class="goal-progress">
+                            <div class="goal-icon">🎯</div>
+                            <div class="goal-details">
+                                <p>Выполните 3 урока</p>
+                                <div class="goal-bar">
+                                    <div class="goal-fill" style="width: 66%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h3>🔤 Сопоставление букв</h3>
+                    <div class="alphabet-matching">
+                        <div class="match-pair">
+                            <div class="match-letter">A</div>
+                            <div class="match-example">Apple - яблоко</div>
+                        </div>
+                        <div class="match-pair correct">
+                            <div class="match-letter">B</div>
+                            <div class="match-example">Ball - мяч</div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        function setTheme(theme) {
+            document.body.setAttribute('data-theme', theme);
+            
+            // Обновляем активную кнопку
+            document.querySelectorAll('.theme-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            if (theme === 'light') {
+                document.querySelector('.theme-btn:first-child').classList.add('active');
+            } else {
+                document.querySelector('.theme-btn:last-child').classList.add('active');
+            }
+            
+            console.log(`Тема изменена на: ${theme}`);
+        }
+        
+        // Тест озвучивания
+        document.querySelector('.alphabet-sound-btn').addEventListener('click', function() {
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance('A');
+                utterance.lang = 'en-US';
+                utterance.rate = 0.7;
+                utterance.pitch = 1.2;
+                speechSynthesis.speak(utterance);
+            }
+        });
+    </script>
+</body>
+</html> 
