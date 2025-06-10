@@ -1,0 +1,1430 @@
+{
+  "beginner": {
+    "name": "Начальный уровень",
+    "description": "Базовая лексика и грамматика",
+    "totalLessons": 21,
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Английский алфавит",
+        "description": "Изучаем все 26 букв английского алфавита",
+        "type": "alphabet",
+        "exercises": [
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "A",
+            "emoji": "🍎",
+            "pronunciation": "[эй]",
+            "example": "Apple - яблоко",
+            "sound": "audio/letters/a.mp3"
+          },
+          {
+            "type": "alphabet-intro", 
+            "question": "Изучите букву и её произношение:",
+            "letter": "B",
+            "emoji": "⚽",
+            "pronunciation": "[би]",
+            "example": "Ball - мяч",
+            "sound": "audio/letters/b.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "C",
+            "emoji": "🐱",
+            "pronunciation": "[си]",
+            "example": "Cat - кот",
+            "sound": "audio/letters/c.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "D",
+            "emoji": "🐶",
+            "pronunciation": "[ди]",
+            "example": "Dog - собака",
+            "sound": "audio/letters/d.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "E",
+            "emoji": "🐘",
+            "pronunciation": "[и]",
+            "example": "Elephant - слон",
+            "sound": "audio/letters/e.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "F",
+            "emoji": "🐠",
+            "pronunciation": "[эф]",
+            "example": "Fish - рыба",
+            "sound": "audio/letters/f.mp3"
+          },
+          {
+            "type": "alphabet-quiz",
+            "question": "Выберите правильное произношение буквы 'A':",
+            "letter": "A",
+            "options": ["[эй]", "[ай]", "[а]", "[е]"],
+            "correct": 0,
+            "explanation": "Буква A произносится как [эй]"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "G",
+            "emoji": "💚",
+            "pronunciation": "[джи]",
+            "example": "Green - зелёный",
+            "sound": "audio/letters/g.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "H",
+            "emoji": "🏠",
+            "pronunciation": "[эйч]",
+            "example": "House - дом",
+            "sound": "audio/letters/h.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "I",
+            "emoji": "🧊",
+            "pronunciation": "[ай]",
+            "example": "Ice - лёд",
+            "sound": "audio/letters/i.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "J",
+            "emoji": "🤸",
+            "pronunciation": "[джей]",
+            "example": "Jump - прыгать",
+            "sound": "audio/letters/j.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "K",
+            "emoji": "🗝️",
+            "pronunciation": "[кей]",
+            "example": "Key - ключ",
+            "sound": "audio/letters/k.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "L",
+            "emoji": "🦁",
+            "pronunciation": "[эл]",
+            "example": "Lion - лев",
+            "sound": "audio/letters/l.mp3"
+          },
+          {
+            "type": "alphabet-quiz",
+            "question": "Выберите правильное произношение буквы 'I':",
+            "letter": "I",
+            "options": ["[и]", "[ай]", "[а]", "[е]"],
+            "correct": 1,
+            "explanation": "Буква I произносится как [ай]"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "M",
+            "emoji": "🌙",
+            "pronunciation": "[эм]",
+            "example": "Moon - луна",
+            "sound": "audio/letters/m.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "N",
+            "emoji": "🌙",
+            "pronunciation": "[эн]",
+            "example": "Night - ночь",
+            "sound": "audio/letters/n.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "O",
+            "emoji": "🍊",
+            "pronunciation": "[оу]",
+            "example": "Orange - апельсин",
+            "sound": "audio/letters/o.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "P",
+            "emoji": "🖊️",
+            "pronunciation": "[пи]",
+            "example": "Pen - ручка",
+            "sound": "audio/letters/p.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "Q",
+            "emoji": "👸",
+            "pronunciation": "[кью]",
+            "example": "Queen - королева",
+            "sound": "audio/letters/q.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "R",
+            "emoji": "🔴",
+            "pronunciation": "[ар]",
+            "example": "Red - красный",
+            "sound": "audio/letters/r.mp3"
+          },
+          {
+            "type": "alphabet-sequence",
+            "question": "Расположите буквы в алфавитном порядке:",
+            "letters": ["M", "P", "N", "O"],
+            "correct": ["M", "N", "O", "P"],
+            "explanation": "Правильный порядок: M, N, O, P"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "S",
+            "emoji": "☀️",
+            "pronunciation": "[эс]",
+            "example": "Sun - солнце",
+            "sound": "audio/letters/s.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "T",
+            "emoji": "🌳",
+            "pronunciation": "[ти]",
+            "example": "Tree - дерево",
+            "sound": "audio/letters/t.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "U",
+            "emoji": "⬆️",
+            "pronunciation": "[ю]",
+            "example": "Up - вверх",
+            "sound": "audio/letters/u.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "V",
+            "emoji": "✔️",
+            "pronunciation": "[ви]",
+            "example": "Very - очень",
+            "sound": "audio/letters/v.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "W",
+            "emoji": "💧",
+            "pronunciation": "[дабл-ю]",
+            "example": "Water - вода",
+            "sound": "audio/letters/w.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "X",
+            "emoji": "📦",
+            "pronunciation": "[экс]",
+            "example": "Box - коробка",
+            "sound": "audio/letters/x.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "Y",
+            "emoji": "💛",
+            "pronunciation": "[уай]",
+            "example": "Yellow - жёлтый",
+            "sound": "audio/letters/y.mp3"
+          },
+          {
+            "type": "alphabet-intro",
+            "question": "Изучите букву и её произношение:",
+            "letter": "Z",
+            "emoji": "🦁",
+            "pronunciation": "[зэд]",
+            "example": "Zoo - зоопарк",
+            "sound": "audio/letters/z.mp3"
+          },
+          {
+            "type": "alphabet-match",
+            "question": "Сопоставьте буквы с примерами:",
+            "pairs": [
+              {"letter": "A", "example": "Apple - яблоко"},
+              {"letter": "M", "example": "Moon - луна"},
+              {"letter": "S", "example": "Sun - солнце"}
+            ]
+          },
+          {
+            "type": "alphabet-sequence",
+            "question": "Расположите буквы в алфавитном порядке:",
+            "letters": ["W", "X", "Y", "Z"],
+            "correct": ["W", "X", "Y", "Z"],
+            "explanation": "Правильный порядок: W, X, Y, Z"
+          },
+          {
+            "type": "alphabet-complete",
+            "question": "Поздравляем! Вы изучили весь английский алфавит!",
+            "description": "Теперь вы знаете все 26 букв английского алфавита и их произношение."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Животные",
+        "description": "Изучаем названия животных на английском",
+        "type": "animals",
+        "exercises": [
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🐱",
+            "word": "Cat",
+            "pronunciation": "[кэт]",
+            "translation": "Кот",
+            "sound": "audio/animals/cat.mp3"
+          },
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🐶",
+            "word": "Dog",
+            "pronunciation": "[дог]",
+            "translation": "Собака",
+            "sound": "audio/animals/dog.mp3"
+          },
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🐦",
+            "word": "Bird",
+            "pronunciation": "[бёрд]",
+            "translation": "Птица",
+            "sound": "audio/animals/bird.mp3"
+          },
+          {
+            "type": "animal-quiz",
+            "question": "Как называется это животное?",
+            "animal": "🐱",
+            "options": ["Dog", "Cat", "Bird", "Fish"],
+            "correct": 1,
+            "explanation": "Cat - кот"
+          },
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🐘",
+            "word": "Elephant",
+            "pronunciation": "[элифэнт]",
+            "translation": "Слон",
+            "sound": "audio/animals/elephant.mp3"
+          },
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🐎",
+            "word": "Horse",
+            "pronunciation": "[хорс]",
+            "translation": "Лошадь",
+            "sound": "audio/animals/horse.mp3"
+          },
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🐠",
+            "word": "Fish",
+            "pronunciation": "[фиш]",
+            "translation": "Рыба",
+            "sound": "audio/animals/fish.mp3"
+          },
+          {
+            "type": "animal-quiz",
+            "question": "Как называется это животное?",
+            "animal": "🐶",
+            "options": ["Cat", "Dog", "Horse", "Fish"],
+            "correct": 1,
+            "explanation": "Dog - собака"
+          },
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🐭",
+            "word": "Mouse",
+            "pronunciation": "[маус]",
+            "translation": "Мышь",
+            "sound": "audio/animals/mouse.mp3"
+          },
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🦁",
+            "word": "Lion",
+            "pronunciation": "[лайон]",
+            "translation": "Лев",
+            "sound": "audio/animals/lion.mp3"
+          },
+          {
+            "type": "animal-quiz",
+            "question": "Как называется это животное?",
+            "animal": "🐠",
+            "options": ["Bird", "Fish", "Mouse", "Lion"],
+            "correct": 1,
+            "explanation": "Fish - рыба"
+          },
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🐻",
+            "word": "Bear",
+            "pronunciation": "[бэар]",
+            "translation": "Медведь",
+            "sound": "audio/animals/bear.mp3"
+          },
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🐺",
+            "word": "Wolf",
+            "pronunciation": "[вулф]",
+            "translation": "Волк",
+            "sound": "audio/animals/wolf.mp3"
+          },
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🐸",
+            "word": "Frog",
+            "pronunciation": "[фрог]",
+            "translation": "Лягушка",
+            "sound": "audio/animals/frog.mp3"
+          },
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🐰",
+            "word": "Rabbit",
+            "pronunciation": "[рэбит]",
+            "translation": "Кролик",
+            "sound": "audio/animals/rabbit.mp3"
+          },
+          {
+            "type": "animal-quiz",
+            "question": "Как называется это животное?",
+            "animal": "🐰",
+            "options": ["Mouse", "Rabbit", "Cat", "Frog"],
+            "correct": 1,
+            "explanation": "Rabbit - кролик"
+          },
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🐯",
+            "word": "Tiger",
+            "pronunciation": "[тайгэр]",
+            "translation": "Тигр",
+            "sound": "audio/animals/tiger.mp3"
+          },
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🦒",
+            "word": "Giraffe",
+            "pronunciation": "[джираф]",
+            "translation": "Жираф",
+            "sound": "audio/animals/giraffe.mp3"
+          },
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🐵",
+            "word": "Monkey",
+            "pronunciation": "[манки]",
+            "translation": "Обезьяна",
+            "sound": "audio/animals/monkey.mp3"
+          },
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🦆",
+            "word": "Duck",
+            "pronunciation": "[дак]",
+            "translation": "Утка",
+            "sound": "audio/animals/duck.mp3"
+          },
+          {
+            "type": "animal-quiz",
+            "question": "Как называется это животное?",
+            "animal": "🐯",
+            "options": ["Lion", "Tiger", "Bear", "Wolf"],
+            "correct": 1,
+            "explanation": "Tiger - тигр"
+          },
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🐄",
+            "word": "Cow",
+            "pronunciation": "[кау]",
+            "translation": "Корова",
+            "sound": "audio/animals/cow.mp3"
+          },
+          {
+            "type": "animal-intro",
+            "question": "Изучите животное и его название:",
+            "animal": "🐷",
+            "word": "Pig",
+            "pronunciation": "[пиг]",
+            "translation": "Свинья",
+            "sound": "audio/animals/pig.mp3"
+          },
+          {
+            "type": "animal-match",
+            "question": "Сопоставьте животных с их названиями:",
+            "pairs": [
+              {"animal": "🐻", "word": "Bear"},
+              {"animal": "🐸", "word": "Frog"},
+              {"animal": "🦒", "word": "Giraffe"},
+              {"animal": "🐵", "word": "Monkey"}
+            ]
+          },
+          {
+            "type": "animal-complete",
+            "question": "Отлично! Вы изучили животных!",
+            "description": "Теперь вы знаете названия 16 животных на английском языке."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Фрукты и овощи",
+        "description": "Изучаем названия фруктов и овощей на английском",
+        "type": "fruits",
+        "exercises": [
+          {
+            "type": "fruit-intro",
+            "question": "Изучите фрукт и его название:",
+            "emoji": "🍎",
+            "word": "Apple",
+            "pronunciation": "[эппл]",
+            "translation": "Яблоко",
+            "sound": "audio/fruits/apple.mp3"
+          },
+          {
+            "type": "fruit-intro",
+            "question": "Изучите фрукт и его название:",
+            "emoji": "🍌",
+            "word": "Banana",
+            "pronunciation": "[банана]",
+            "translation": "Банан",
+            "sound": "audio/fruits/banana.mp3"
+          },
+          {
+            "type": "fruit-intro",
+            "question": "Изучите фрукт и его название:",
+            "emoji": "🍊",
+            "word": "Orange",
+            "pronunciation": "[орэндж]",
+            "translation": "Апельсин",
+            "sound": "audio/fruits/orange.mp3"
+          },
+          {
+            "type": "fruit-quiz",
+            "question": "Как называется этот фрукт?",
+            "emoji": "🍎",
+            "options": ["Banana", "Apple", "Orange", "Pear"],
+            "correct": 1,
+            "explanation": "Apple - яблоко"
+          },
+          {
+            "type": "fruit-intro",
+            "question": "Изучите фрукт и его название:",
+            "emoji": "🍐",
+            "word": "Pear",
+            "pronunciation": "[пэар]",
+            "translation": "Груша",
+            "sound": "audio/fruits/pear.mp3"
+          },
+          {
+            "type": "fruit-intro",
+            "question": "Изучите фрукт и его название:",
+            "emoji": "🍇",
+            "word": "Grapes",
+            "pronunciation": "[грэйпс]",
+            "translation": "Виноград",
+            "sound": "audio/fruits/grapes.mp3"
+          },
+          {
+            "type": "fruit-intro",
+            "question": "Изучите ягоду и её название:",
+            "emoji": "🍓",
+            "word": "Strawberry",
+            "pronunciation": "[стробэри]",
+            "translation": "Клубника",
+            "sound": "audio/fruits/strawberry.mp3"
+          },
+          {
+            "type": "fruit-quiz",
+            "question": "Как называется эта ягода?",
+            "emoji": "🍓",
+            "options": ["Cherry", "Strawberry", "Grapes", "Apple"],
+            "correct": 1,
+            "explanation": "Strawberry - клубника"
+          },
+          {
+            "type": "fruit-intro",
+            "question": "Изучите фрукт и его название:",
+            "emoji": "🍋",
+            "word": "Lemon",
+            "pronunciation": "[лэмон]",
+            "translation": "Лимон",
+            "sound": "audio/fruits/lemon.mp3"
+          },
+          {
+            "type": "fruit-intro",
+            "question": "Изучите ягоду и её название:",
+            "emoji": "🍒",
+            "word": "Cherry",
+            "pronunciation": "[чэри]",
+            "translation": "Вишня",
+            "sound": "audio/fruits/cherry.mp3"
+          },
+          {
+            "type": "fruit-intro",
+            "question": "Изучите овощ и его название:",
+            "emoji": "🍅",
+            "word": "Tomato",
+            "pronunciation": "[томэйто]",
+            "translation": "Помидор",
+            "sound": "audio/fruits/tomato.mp3"
+          },
+          {
+            "type": "fruit-quiz",
+            "question": "Как называется этот овощ?",
+            "emoji": "🍅",
+            "options": ["Potato", "Tomato", "Onion", "Carrot"],
+            "correct": 1,
+            "explanation": "Tomato - помидор"
+          },
+          {
+            "type": "fruit-intro",
+            "question": "Изучите овощ и его название:",
+            "emoji": "🥕",
+            "word": "Carrot",
+            "pronunciation": "[кэррот]",
+            "translation": "Морковь",
+            "sound": "audio/fruits/carrot.mp3"
+          },
+          {
+            "type": "fruit-intro",
+            "question": "Изучите овощ и его название:",
+            "emoji": "🥔",
+            "word": "Potato",
+            "pronunciation": "[потэйто]",
+            "translation": "Картофель",
+            "sound": "audio/fruits/potato.mp3"
+          },
+          {
+            "type": "fruit-intro",
+            "question": "Изучите овощ и его название:",
+            "emoji": "🥒",
+            "word": "Cucumber",
+            "pronunciation": "[кьюкамбэр]",
+            "translation": "Огурец",
+            "sound": "audio/fruits/cucumber.mp3"
+          },
+          {
+            "type": "fruit-intro",
+            "question": "Изучите овощ и его название:",
+            "emoji": "🧅",
+            "word": "Onion",
+            "pronunciation": "[оньон]",
+            "translation": "Лук",
+            "sound": "audio/fruits/onion.mp3"
+          },
+          {
+            "type": "fruit-quiz",
+            "question": "Как называется этот овощ?",
+            "emoji": "🥕",
+            "options": ["Cucumber", "Carrot", "Potato", "Onion"],
+            "correct": 1,
+            "explanation": "Carrot - морковь"
+          },
+          {
+            "type": "fruit-intro",
+            "question": "Изучите овощ и его название:",
+            "emoji": "🥬",
+            "word": "Cabbage",
+            "pronunciation": "[кэбидж]",
+            "translation": "Капуста",
+            "sound": "audio/fruits/cabbage.mp3"
+          },
+          {
+            "type": "fruit-intro",
+            "question": "Изучите овощ и его название:",
+            "emoji": "🌶️",
+            "word": "Pepper",
+            "pronunciation": "[пэппэр]",
+            "translation": "Перец",
+            "sound": "audio/fruits/pepper.mp3"
+          },
+          {
+            "type": "fruit-intro",
+            "question": "Изучите овощ и его название:",
+            "emoji": "🥦",
+            "word": "Broccoli",
+            "pronunciation": "[брокколи]",
+            "translation": "Брокколи",
+            "sound": "audio/fruits/broccoli.mp3"
+          },
+          {
+            "type": "fruit-match",
+            "question": "Сопоставьте фрукты и овощи с их названиями:",
+            "pairs": [
+              {"emoji": "🍎", "word": "Apple"},
+              {"emoji": "🍅", "word": "Tomato"},
+              {"emoji": "🥕", "word": "Carrot"},
+              {"emoji": "🍌", "word": "Banana"}
+            ]
+          },
+          {
+            "type": "fruit-complete",
+            "question": "Отлично! Вы изучили фрукты и овощи!",
+            "description": "Теперь вы знаете названия 16 фруктов и овощей на английском языке."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Числа 1-10",
+        "description": "Учим основные числа",
+        "type": "numbers",
+        "exercises": [
+          {
+            "type": "number-intro",
+            "question": "Изучите число и его название:",
+            "emoji": "1️⃣",
+            "number": "1",
+            "word": "One",
+            "pronunciation": "[ван]",
+            "translation": "Один",
+            "sound": "audio/numbers/one.mp3"
+          },
+          {
+            "type": "number-intro",
+            "question": "Изучите число и его название:",
+            "emoji": "2️⃣",
+            "number": "2",
+            "word": "Two",
+            "pronunciation": "[ту]",
+            "translation": "Два",
+            "sound": "audio/numbers/two.mp3"
+          },
+          {
+            "type": "number-intro",
+            "question": "Изучите число и его название:",
+            "emoji": "3️⃣",
+            "number": "3",
+            "word": "Three",
+            "pronunciation": "[сри]",
+            "translation": "Три",
+            "sound": "audio/numbers/three.mp3"
+          },
+          {
+            "type": "number-quiz",
+            "question": "Как называется это число?",
+            "emoji": "1️⃣",
+            "number": "1",
+            "options": ["Two", "One", "Three", "Four"],
+            "correct": 1,
+            "explanation": "One - один"
+          },
+          {
+            "type": "number-intro",
+            "question": "Изучите число и его название:",
+            "emoji": "4️⃣",
+            "number": "4",
+            "word": "Four",
+            "pronunciation": "[фор]",
+            "translation": "Четыре",
+            "sound": "audio/numbers/four.mp3"
+          },
+          {
+            "type": "number-intro",
+            "question": "Изучите число и его название:",
+            "emoji": "5️⃣",
+            "number": "5",
+            "word": "Five",
+            "pronunciation": "[файв]",
+            "translation": "Пять",
+            "sound": "audio/numbers/five.mp3"
+          },
+          {
+            "type": "number-intro",
+            "question": "Изучите число и его название:",
+            "emoji": "6️⃣",
+            "number": "6",
+            "word": "Six",
+            "pronunciation": "[сикс]",
+            "translation": "Шесть",
+            "sound": "audio/numbers/six.mp3"
+          },
+          {
+            "type": "number-quiz",
+            "question": "Как называется это число?",
+            "emoji": "5️⃣",
+            "number": "5",
+            "options": ["Four", "Five", "Six", "Seven"],
+            "correct": 1,
+            "explanation": "Five - пять"
+          },
+          {
+            "type": "number-intro",
+            "question": "Изучите число и его название:",
+            "emoji": "7️⃣",
+            "number": "7",
+            "word": "Seven",
+            "pronunciation": "[сэвэн]",
+            "translation": "Семь",
+            "sound": "audio/numbers/seven.mp3"
+          },
+          {
+            "type": "number-intro",
+            "question": "Изучите число и его название:",
+            "emoji": "8️⃣",
+            "number": "8",
+            "word": "Eight",
+            "pronunciation": "[эйт]",
+            "translation": "Восемь",
+            "sound": "audio/numbers/eight.mp3"
+          },
+          {
+            "type": "number-intro",
+            "question": "Изучите число и его название:",
+            "emoji": "9️⃣",
+            "number": "9",
+            "word": "Nine",
+            "pronunciation": "[найн]",
+            "translation": "Девять",
+            "sound": "audio/numbers/nine.mp3"
+          },
+          {
+            "type": "number-intro",
+            "question": "Изучите число и его название:",
+            "emoji": "🔟",
+            "number": "10",
+            "word": "Ten",
+            "pronunciation": "[тэн]",
+            "translation": "Десять",
+            "sound": "audio/numbers/ten.mp3"
+          },
+          {
+            "type": "number-quiz",
+            "question": "Как называется это число?",
+            "emoji": "🔟",
+            "number": "10",
+            "options": ["Eight", "Nine", "Ten", "Seven"],
+            "correct": 2,
+            "explanation": "Ten - десять"
+          },
+          {
+            "type": "number-match",
+            "question": "Сопоставьте числа с их названиями:",
+            "pairs": [
+              {"emoji": "1️⃣", "word": "One"},
+              {"emoji": "5️⃣", "word": "Five"},
+              {"emoji": "🔟", "word": "Ten"},
+              {"emoji": "3️⃣", "word": "Three"}
+            ]
+          },
+          {
+            "type": "number-complete",
+            "question": "Отлично! Вы изучили числа!",
+            "description": "Теперь вы знаете числа от 1 до 10 на английском языке."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Приветствие и знакомство",
+        "description": "Базовые фразы общения",
+        "type": "greetings",
+        "exercises": [
+          {
+            "type": "greetings-intro",
+            "question": "Изучите приветствие:",
+            "phrase": "Hello",
+            "emoji": "👋",
+            "pronunciation": "[хэлоу]",
+            "translation": "Привет",
+            "usage": "Универсальное приветствие",
+            "sound": "audio/greetings/hello.mp3"
+          },
+          {
+            "type": "greetings-intro",
+            "question": "Изучите приветствие:",
+            "phrase": "Good morning",
+            "emoji": "🌅",
+            "pronunciation": "[гуд морнинг]",
+            "translation": "Доброе утро",
+            "usage": "Утреннее приветствие",
+            "sound": "audio/greetings/good_morning.mp3"
+          },
+          {
+            "type": "greetings-intro",
+            "question": "Изучите приветствие:",
+            "phrase": "Good afternoon",
+            "emoji": "☀️",
+            "pronunciation": "[гуд афтернун]",
+            "translation": "Добрый день",
+            "usage": "Дневное приветствие",
+            "sound": "audio/greetings/good_afternoon.mp3"
+          },
+          {
+            "type": "greetings-quiz",
+            "question": "Как сказать 'Привет' по-английски?",
+            "phrase": "Hello",
+            "options": ["Goodbye", "Hello", "Thanks", "Sorry"],
+            "correct": 1,
+            "explanation": "Hello означает 'Привет'"
+          },
+          {
+            "type": "greetings-intro",
+            "question": "Изучите приветствие:",
+            "phrase": "Good evening",
+            "emoji": "🌆",
+            "pronunciation": "[гуд ивнинг]",
+            "translation": "Добрый вечер",
+            "usage": "Вечернее приветствие",
+            "sound": "audio/greetings/good_evening.mp3"
+          },
+          {
+            "type": "greetings-intro",
+            "question": "Изучите вопрос:",
+            "phrase": "How are you?",
+            "emoji": "🤔",
+            "pronunciation": "[хау ар ю]",
+            "translation": "Как дела?",
+            "usage": "Вопрос о самочувствии",
+            "sound": "audio/greetings/how_are_you.mp3"
+          },
+          {
+            "type": "greetings-intro",
+            "question": "Изучите ответ:",
+            "phrase": "I'm fine",
+            "emoji": "😊",
+            "pronunciation": "[айм файн]",
+            "translation": "У меня все хорошо",
+            "usage": "Ответ на вопрос о самочувствии",
+            "sound": "audio/greetings/im_fine.mp3"
+          },
+          {
+            "type": "greetings-quiz",
+            "question": "Что означает 'Good morning'?",
+            "phrase": "Good morning",
+            "options": ["Доброй ночи", "Добрый день", "Доброе утро", "До свидания"],
+            "correct": 2,
+            "explanation": "Good morning - Доброе утро"
+          },
+          {
+            "type": "greetings-intro",
+            "question": "Изучите прощание:",
+            "phrase": "Goodbye",
+            "emoji": "👋",
+            "pronunciation": "[гудбай]",
+            "translation": "До свидания",
+            "usage": "Официальное прощание",
+            "sound": "audio/greetings/goodbye.mp3"
+          },
+          {
+            "type": "greetings-intro",
+            "question": "Изучите знакомство:",
+            "phrase": "What's your name?",
+            "emoji": "❓",
+            "pronunciation": "[вотс ёр нейм]",
+            "translation": "Как вас зовут?",
+            "usage": "Вопрос при знакомстве",
+            "sound": "audio/greetings/whats_your_name.mp3"
+          },
+          {
+            "type": "greetings-intro",
+            "question": "Изучите ответ:",
+            "phrase": "My name is...",
+            "emoji": "🙋",
+            "pronunciation": "[май нейм из]",
+            "translation": "Меня зовут...",
+            "usage": "Представление себя",
+            "sound": "audio/greetings/my_name_is.mp3"
+          },
+          {
+            "type": "greetings-quiz",
+            "question": "Как ответить на 'How are you?'",
+            "phrase": "I'm fine",
+            "options": ["Goodbye", "Thank you", "I'm fine", "Hello"],
+            "correct": 2,
+            "explanation": "На 'How are you?' отвечают 'I'm fine' - У меня все хорошо"
+          },
+          {
+            "type": "greetings-match",
+            "question": "Сопоставьте фразы с их переводами:",
+            "pairs": [
+              {"phrase": "Hello", "translation": "Привет"},
+              {"phrase": "Good morning", "translation": "Доброе утро"},
+              {"phrase": "How are you?", "translation": "Как дела?"},
+              {"phrase": "Goodbye", "translation": "До свидания"}
+            ]
+          },
+          {
+            "type": "greetings-complete",
+            "question": "Отлично! Вы освоили базовые приветствия!",
+            "description": "Теперь вы можете поздороваться, представиться и попрощаться на английском языке."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Семья",
+        "description": "Члены семьи на английском",
+        "type": "family",
+        "exercises": [
+          {
+            "type": "family-intro",
+            "question": "Изучите члена семьи:",
+            "word": "Mother",
+            "emoji": "👩",
+            "pronunciation": "[мазэ]",
+            "translation": "Мать, мама",
+            "example": "My mother is kind",
+            "sound": "audio/family/mother.mp3"
+          },
+          {
+            "type": "family-intro",
+            "question": "Изучите члена семьи:",
+            "word": "Father",
+            "emoji": "👨",
+            "pronunciation": "[фазэ]",
+            "translation": "Отец, папа",
+            "example": "My father is strong",
+            "sound": "audio/family/father.mp3"
+          },
+          {
+            "type": "family-intro",
+            "question": "Изучите члена семьи:",
+            "word": "Sister",
+            "emoji": "👧",
+            "pronunciation": "[систэ]",
+            "translation": "Сестра",
+            "example": "My sister is smart",
+            "sound": "audio/family/sister.mp3"
+          },
+          {
+            "type": "family-quiz",
+            "question": "Как переводится 'mother'?",
+            "word": "Mother",
+            "options": ["отец", "мать", "сын", "дочь"],
+            "correct": 1,
+            "explanation": "Mother - мать, мама"
+          },
+          {
+            "type": "family-intro",
+            "question": "Изучите члена семьи:",
+            "word": "Brother",
+            "emoji": "👦",
+            "pronunciation": "[бразэ]",
+            "translation": "Брат",
+            "example": "My brother is funny",
+            "sound": "audio/family/brother.mp3"
+          },
+          {
+            "type": "family-intro",
+            "question": "Изучите члена семьи:",
+            "word": "Grandmother",
+            "emoji": "👵",
+            "pronunciation": "[грэндмазэ]",
+            "translation": "Бабушка",
+            "example": "My grandmother is wise",
+            "sound": "audio/family/grandmother.mp3"
+          },
+          {
+            "type": "family-intro",
+            "question": "Изучите члена семьи:",
+            "word": "Grandfather",
+            "emoji": "👴",
+            "pronunciation": "[грэндфазэ]",
+            "translation": "Дедушка",
+            "example": "My grandfather is kind",
+            "sound": "audio/family/grandfather.mp3"
+          },
+          {
+            "type": "family-quiz",
+            "question": "Выберите правильный перевод 'brother':",
+            "word": "Brother",
+            "options": ["сестра", "брат", "дядя", "тетя"],
+            "correct": 1,
+            "explanation": "Brother - брат"
+          },
+          {
+            "type": "family-intro",
+            "question": "Изучите члена семьи:",
+            "word": "Son",
+            "emoji": "👶",
+            "pronunciation": "[сан]",
+            "translation": "Сын",
+            "example": "He is my son",
+            "sound": "audio/family/son.mp3"
+          },
+          {
+            "type": "family-intro",
+            "question": "Изучите члена семьи:",
+            "word": "Daughter",
+            "emoji": "👧",
+            "pronunciation": "[дотэ]",
+            "translation": "Дочь",
+            "example": "She is my daughter",
+            "sound": "audio/family/daughter.mp3"
+          },
+          {
+            "type": "family-intro",
+            "question": "Изучите члена семьи:",
+            "word": "Family",
+            "emoji": "👨‍👩‍👧‍👦",
+            "pronunciation": "[фэмили]",
+            "translation": "Семья",
+            "example": "I love my family",
+            "sound": "audio/family/family.mp3"
+          },
+          {
+            "type": "family-quiz",
+            "question": "Как сказать 'сестра' по-английски?",
+            "word": "Sister",
+            "options": ["Brother", "Sister", "Mother", "Father"],
+            "correct": 1,
+            "explanation": "Сестра по-английски - sister"
+          },
+          {
+            "type": "family-match",
+            "question": "Сопоставьте членов семьи с их переводами:",
+            "pairs": [
+              {"word": "Mother", "translation": "Мама"},
+              {"word": "Father", "translation": "Папа"},
+              {"word": "Sister", "translation": "Сестра"},
+              {"word": "Brother", "translation": "Брат"}
+            ]
+          },
+          {
+            "type": "family-complete",
+            "question": "Отлично! Вы изучили семью!",
+            "description": "Теперь вы знаете основных членов семьи на английском языке."
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Цвета",
+        "description": "Основные цвета",
+        "type": "colors",
+        "exercises": [
+          {
+            "type": "colors-intro",
+            "question": "Изучите цвет:",
+            "word": "Red",
+            "emoji": "🔴",
+            "pronunciation": "[рэд]",
+            "translation": "Красный",
+            "example": "A red apple",
+            "sound": "audio/colors/red.mp3"
+          },
+          {
+            "type": "colors-intro",
+            "question": "Изучите цвет:",
+            "word": "Blue",
+            "emoji": "🔵",
+            "pronunciation": "[блю]",
+            "translation": "Синий",
+            "example": "A blue sky",
+            "sound": "audio/colors/blue.mp3"
+          },
+          {
+            "type": "colors-intro",
+            "question": "Изучите цвет:",
+            "word": "Green",
+            "emoji": "🟢",
+            "pronunciation": "[грин]",
+            "translation": "Зелёный",
+            "example": "Green grass",
+            "sound": "audio/colors/green.mp3"
+          },
+          {
+            "type": "colors-quiz",
+            "question": "Как переводится 'red'?",
+            "word": "Red",
+            "options": ["синий", "зеленый", "красный", "желтый"],
+            "correct": 2,
+            "explanation": "Red - красный"
+          },
+          {
+            "type": "colors-intro",
+            "question": "Изучите цвет:",
+            "word": "Yellow",
+            "emoji": "🟡",
+            "pronunciation": "[йэлоу]",
+            "translation": "Жёлтый",
+            "example": "A yellow sun",
+            "sound": "audio/colors/yellow.mp3"
+          },
+          {
+            "type": "colors-intro",
+            "question": "Изучите цвет:",
+            "word": "Orange",
+            "emoji": "🟠",
+            "pronunciation": "[орэндж]",
+            "translation": "Оранжевый",
+            "example": "An orange orange",
+            "sound": "audio/colors/orange.mp3"
+          },
+          {
+            "type": "colors-intro",
+            "question": "Изучите цвет:",
+            "word": "Purple",
+            "emoji": "🟣",
+            "pronunciation": "[пёрпл]",
+            "translation": "Фиолетовый",
+            "example": "Purple flowers",
+            "sound": "audio/colors/purple.mp3"
+          },
+          {
+            "type": "colors-quiz",
+            "question": "Выберите правильный перевод 'blue':",
+            "word": "Blue",
+            "options": ["синий", "черный", "белый", "серый"],
+            "correct": 0,
+            "explanation": "Blue - синий"
+          },
+          {
+            "type": "colors-intro",
+            "question": "Изучите цвет:",
+            "word": "Black",
+            "emoji": "⚫",
+            "pronunciation": "[блэк]",
+            "translation": "Чёрный",
+            "example": "A black cat",
+            "sound": "audio/colors/black.mp3"
+          },
+          {
+            "type": "colors-intro",
+            "question": "Изучите цвет:",
+            "word": "White",
+            "emoji": "⚪",
+            "pronunciation": "[вайт]",
+            "translation": "Белый",
+            "example": "White snow",
+            "sound": "audio/colors/white.mp3"
+          },
+          {
+            "type": "colors-intro",
+            "question": "Изучите цвет:",
+            "word": "Pink",
+            "emoji": "🩷",
+            "pronunciation": "[пинк]",
+            "translation": "Розовый",
+            "example": "Pink roses",
+            "sound": "audio/colors/pink.mp3"
+          },
+          {
+            "type": "colors-quiz",
+            "question": "Как сказать 'зелёный' по-английски?",
+            "word": "Green",
+            "options": ["Red", "Blue", "Green", "Yellow"],
+            "correct": 2,
+            "explanation": "Зелёный по-английски - green"
+          },
+          {
+            "type": "colors-match",
+            "question": "Сопоставьте цвета с их переводами:",
+            "pairs": [
+              {"word": "Red", "translation": "Красный"},
+              {"word": "Blue", "translation": "Синий"},
+              {"word": "Green", "translation": "Зелёный"},
+              {"word": "Yellow", "translation": "Жёлтый"}
+            ]
+          },
+          {
+            "type": "colors-complete",
+            "question": "Отлично! Вы изучили цвета!",
+            "description": "Теперь вы знаете основные цвета на английском языке."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Части тела",
+        "description": "Основные части тела человека",
+        "type": "body",
+        "exercises": [
+          {
+            "type": "body-intro",
+            "question": "Изучите часть тела:",
+            "word": "Head",
+            "emoji": "👤",
+            "pronunciation": "[хэд]",
+            "translation": "Голова",
+            "example": "My head hurts",
+            "sound": "audio/body/head.mp3"
+          },
+          {
+            "type": "body-intro",
+            "question": "Изучите часть тела:",
+            "word": "Eyes",
+            "emoji": "👀",
+            "pronunciation": "[айз]",
+            "translation": "Глаза",
+            "example": "I have blue eyes",
+            "sound": "audio/body/eyes.mp3"
+          },
+          {
+            "type": "body-intro",
+            "question": "Изучите часть тела:",
+            "word": "Nose",
+            "emoji": "👃",
+            "pronunciation": "[ноуз]",
+            "translation": "Нос",
+            "example": "A big nose",
+            "sound": "audio/body/nose.mp3"
+          },
+          {
+            "type": "body-quiz",
+            "question": "Как переводится 'head'?",
+            "word": "Head",
+            "options": ["рука", "нога", "голова", "шея"],
+            "correct": 2,
+            "explanation": "Head - голова"
+          },
+          {
+            "type": "body-intro",
+            "question": "Изучите часть тела:",
+            "word": "Mouth",
+            "emoji": "👄",
+            "pronunciation": "[маус]",
+            "translation": "Рот",
+            "example": "Open your mouth",
+            "sound": "audio/body/mouth.mp3"
+          },
+          {
+            "type": "body-intro",
+            "question": "Изучите часть тела:",
+            "word": "Hands",
+            "emoji": "👐",
+            "pronunciation": "[хэндз]",
+            "translation": "Руки",
+            "example": "Wash your hands",
+            "sound": "audio/body/hands.mp3"
+          },
+          {
+            "type": "body-intro",
+            "question": "Изучите часть тела:",
+            "word": "Legs",
+            "emoji": "🦵",
+            "pronunciation": "[легз]",
+            "translation": "Ноги",
+            "example": "Strong legs",
+            "sound": "audio/body/legs.mp3"
+          },
+          {
+            "type": "body-quiz",
+            "question": "Выберите правильный перевод 'eyes':",
+            "word": "Eyes",
+            "options": ["глаза", "уши", "нос", "рот"],
+            "correct": 0,
+            "explanation": "Eyes - глаза"
+          },
+          {
+            "type": "body-intro",
+            "question": "Изучите часть тела:",
+            "word": "Feet",
+            "emoji": "🦶",
+            "pronunciation": "[фит]",
+            "translation": "Ступни",
+            "example": "My feet are cold",
+            "sound": "audio/body/feet.mp3"
+          },
+          {
+            "type": "body-intro",
+            "question": "Изучите часть тела:",
+            "word": "Ears",
+            "emoji": "👂",
+            "pronunciation": "[иэрз]",
+            "translation": "Уши",
+            "example": "I can hear with my ears",
+            "sound": "audio/body/ears.mp3"
+          },
+          {
+            "type": "body-intro",
+            "question": "Изучите часть тела:",
+            "word": "Hair",
+            "emoji": "💇",
+            "pronunciation": "[хээр]",
+            "translation": "Волосы",
+            "example": "Long hair",
+            "sound": "audio/body/hair.mp3"
+          },
+          {
+            "type": "body-quiz",
+            "question": "Как сказать 'руки' по-английски?",
+            "word": "Hands",
+            "options": ["Legs", "Arms", "Hands", "Feet"],
+            "correct": 2,
+            "explanation": "Руки по-английски - hands"
+          },
+          {
+            "type": "body-match",
+            "question": "Сопоставьте части тела с их переводами:",
+            "pairs": [
+              {"word": "Head", "translation": "Голова"},
+              {"word": "Eyes", "translation": "Глаза"},
+              {"word": "Nose", "translation": "Нос"},
+              {"word": "Mouth", "translation": "Рот"}
+            ]
+          },
+          {
+            "type": "body-complete",
+            "question": "Отлично! Вы изучили части тела!",
+            "description": "Теперь вы знаете основные части тела на английском языке."
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Финальный тест",
+        "description": "Проверьте свои знания начального уровня",
+        "type": "final-test",
+        "exercises": [
+          {
+            "type": "test-start",
+            "question": "Готовы к финальному тесту?",
+            "description": "Вас ждёт 20 случайных вопросов из всех пройденных тем начального уровня. Удачи!"
+          }
+        ]
+      }
+    ]
+  }
+} 

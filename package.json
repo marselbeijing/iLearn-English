@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "live-server --port=3000",
-    "build": "npm run minify",
-    "minify": "terser js/app.js -o js/app.min.js && cleancss -o css/style.min.css css/style.css"
+    "build": "npm run prepare-public && npm run minify",
+    "prepare-public": "mkdir -p public && cp index.html public/ && cp -r css js data images public/",
+    "minify": "terser public/js/app.js -o public/js/app.min.js && cleancss -o public/css/style.min.css public/css/style.css"
   },
   "keywords": ["telegram", "mini-app", "english", "learning", "education"],
   "author": "iLearn English Team",
