@@ -4,10 +4,10 @@
   "installCommand": "npm install",
   "devCommand": "python3 -m http.server 3000",
   "framework": null,
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
   "headers": [
