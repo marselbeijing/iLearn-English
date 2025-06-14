@@ -4996,26 +4996,33 @@ body:not([data-theme="dark"]) {
   position: relative;
 }
 
+/* Иконки на фоне */
 #theme-toggle + .slider:after {
-  content: "🌙☀️";
+  content: "🌙                    ☀️";
   position: absolute;
   left: 6px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 10px;
-  letter-spacing: 8px;
+  font-size: 11px;
   pointer-events: none;
+  z-index: 1;
+  white-space: pre;
 }
 
+/* Белый ползунок */
 #theme-toggle + .slider:before {
   content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  top: 3px;
   background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
+  border-radius: 50%;
+  transition: transform 0.2s;
   border: 1px solid #ddd;
   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  z-index: 2;
 }
 
 #theme-toggle:checked + .slider:before {
