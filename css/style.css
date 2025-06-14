@@ -185,6 +185,19 @@ body:not([data-theme="dark"]) {
     box-shadow: var(--shadow-card);
 }
 
+/* Специальные стили для заголовка настроек */
+.settings-header {
+    justify-content: center;
+    text-align: center;
+}
+
+.settings-header h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text-color);
+}
+
 .app-title {
     text-align: center;
     flex: 1;
