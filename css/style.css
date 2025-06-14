@@ -239,8 +239,9 @@ body:not([data-theme="dark"]) {
 }
 
 /* Секция прогресса */
-.progress-section {
-    margin-bottom: 2rem;
+#progress-screen .progress-section {
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .progress-section h2 {
