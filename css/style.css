@@ -277,8 +277,9 @@ body:not([data-theme="dark"]) {
 }
 
 /* Секция уровней */
-.levels-section h2 {
-    font-size: 1.5rem;
+#home-screen .levels-section h2 {
+    text-align: center;
+    font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
