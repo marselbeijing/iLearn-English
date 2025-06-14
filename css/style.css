@@ -4585,10 +4585,16 @@ body:not([data-theme="dark"]) {
 }
 
 .overall-stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
+}
+
+.stats-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .stat-card {
@@ -4924,7 +4930,11 @@ body:not([data-theme="dark"]) {
 
 @media (max-width: 480px) {
     .overall-stats {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+    
+    .stats-column {
+        gap: 0.75rem;
     }
     
     .level-emoji {
