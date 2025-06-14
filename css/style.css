@@ -257,10 +257,9 @@ body:not([data-theme="dark"]) {
 }
 
 .progress-section h2 {
-    font-size: 0.63rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    text-align: center;
 }
 
 .progress-bar {
@@ -721,17 +720,8 @@ body:not([data-theme="dark"]) {
 }
 
 /* Настройки */
-#settings-screen {
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
 .settings-content {
     max-width: 400px;
-    flex: 1;
-    overflow: hidden;
 }
 
 .setting-item {
@@ -4664,10 +4654,9 @@ body:not([data-theme="dark"]) {
 
 .level-progress-section h3, .achievements-section h3 {
     color: var(--text-color);
-    font-size: 0.504rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     font-weight: 600;
-    text-align: center;
 }
 
 .level-progress-cards {
@@ -5060,4 +5049,20 @@ body:not([data-theme="dark"]) {
 }
 .support-btn:hover {
   background: #039be5;
+}
+
+#settings-screen.screen {
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 20;
+    background: var(--secondary-bg);
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-content {
+    overflow: visible !important;
+    flex: 1;
 }
