@@ -53,19 +53,15 @@ class iLearnEnglishApp {
     updateThemeToggle(theme) {
         const themeToggle = document.getElementById('theme-toggle');
         if (themeToggle) {
-            const options = themeToggle.querySelectorAll('.toggle-option');
-            options.forEach(option => {
-                option.classList.remove('active');
-                if (option.dataset.theme === theme) {
-                    option.classList.add('active');
-                }
-            });
+            themeToggle.checked = theme === 'dark';
         }
     }
 
     // Переключение темы
-    toggleTheme(theme) {
-        this.setTheme(theme);
+    toggleTheme() {
+        const themeToggle = document.getElementById('theme-toggle');
+        const newTheme = themeToggle.checked ? 'dark' : 'light';
+        this.setTheme(newTheme);
         this.triggerHaptic('light');
     }
 
@@ -344,6 +340,10 @@ class iLearnEnglishApp {
         if (soundToggle) soundToggle.checked = this.settings.soundEnabled;
         if (hapticToggle) hapticToggle.checked = this.settings.hapticEnabled;
         if (notificationsToggle) notificationsToggle.checked = this.settings.notificationsEnabled;
+        
+        // Обновляем переключатель темы
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        this.updateThemeToggle(savedTheme);
     }
 
     // Переключение звука
@@ -1354,11 +1354,8 @@ class iLearnEnglishApp {
         document.getElementById('notifications-toggle')?.addEventListener('change', (e) => this.toggleNotifications(e.target.checked));
         
         // Переключатель темы
-        document.getElementById('theme-toggle')?.addEventListener('click', (e) => {
-            if (e.target.closest('.toggle-option')) {
-                const theme = e.target.closest('.toggle-option').dataset.theme;
-                this.toggleTheme(theme);
-            }
+        document.getElementById('theme-toggle')?.addEventListener('change', (e) => {
+            this.toggleTheme();
         });
 
         // Нижняя навигация
