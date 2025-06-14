@@ -4990,24 +4990,24 @@ body:not([data-theme="dark"]) {
 
 /* Специальные стили для переключателя темы */
 #theme-toggle + .slider {
-  background: #ffd54f;
+  background: #424242;
 }
 #theme-toggle + .slider:before {
-  content: "☀️";
+  content: "🌙";
   background: white;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 12px;
   color: transparent;
-  text-shadow: 0 0 0 #ffa000;
+  text-shadow: 0 0 0 #fff;
 }
 #theme-toggle:checked + .slider {
-  background: #424242;
+  background: #ffd54f;
 }
 #theme-toggle:checked + .slider:before {
-  content: "🌙";
-  text-shadow: 0 0 0 #fff;
+  content: "☀️";
+  text-shadow: 0 0 0 #ffa000;
   transform: translateX(24px);
 }
 
