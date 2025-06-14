@@ -5026,3 +5026,18 @@ body:not([data-theme="dark"]) {
 .switch input:checked + .slider:before {
   transform: translateX(24px);
 }
+
+.support-btn {
+  background: #4fc3f7;
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius-small);
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.support-btn:hover {
+  background: #039be5;
+}

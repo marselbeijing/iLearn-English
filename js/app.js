@@ -1373,6 +1373,10 @@ class iLearnEnglishApp {
         // Аккаунт функции
         document.getElementById('export-data')?.addEventListener('click', () => this.exportUserData());
         document.getElementById('delete-account')?.addEventListener('click', () => this.deleteAccount());
+        // Кнопка поддержки
+        document.getElementById('support-btn')?.addEventListener('click', () => {
+            window.open('https://t.me/iSpeechHelper', '_blank');
+        });
     }
 
     // Загрузка экрана
