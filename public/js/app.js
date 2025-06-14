@@ -53,14 +53,14 @@ class iLearnEnglishApp {
     updateThemeToggle(theme) {
         const themeToggle = document.getElementById('theme-toggle');
         if (themeToggle) {
-            themeToggle.checked = theme === 'light';
+            themeToggle.checked = theme === 'dark';
         }
     }
 
     // Переключение темы
     toggleTheme() {
         const themeToggle = document.getElementById('theme-toggle');
-        const newTheme = themeToggle.checked ? 'light' : 'dark';
+        const newTheme = themeToggle.checked ? 'dark' : 'light';
         this.setTheme(newTheme);
         this.triggerHaptic('light');
     }

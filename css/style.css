@@ -188,7 +188,6 @@ body:not([data-theme="dark"]) {
 /* Специальные стили для заголовка настроек */
 .settings-header {
     justify-content: center;
-    text-align: center;
 }
 
 .settings-header h2 {
@@ -4992,40 +4991,24 @@ body:not([data-theme="dark"]) {
 
 /* Специальные стили для переключателя темы */
 #theme-toggle + .slider {
-  background: linear-gradient(to right, #424242 50%, #ffd54f 50%);
-  position: relative;
+  background: #ffd54f;
 }
-
-/* Иконки на фоне */
-#theme-toggle + .slider:after {
-  content: "🌙                    ☀️";
-  position: absolute;
-  left: 6px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 11px;
-  pointer-events: none;
-  z-index: 1;
-  white-space: pre;
-}
-
-/* Белый ползунок */
 #theme-toggle + .slider:before {
-  content: "";
-  position: absolute;
-  height: 22px;
-  width: 22px;
-  left: 3px;
-  top: 3px;
+  content: "☀️";
   background: white;
-  border-radius: 50%;
-  transition: transform 0.2s;
-  border: 1px solid #ddd;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: transparent;
+  text-shadow: 0 0 0 #ffa000;
 }
-
+#theme-toggle:checked + .slider {
+  background: #424242;
+}
 #theme-toggle:checked + .slider:before {
+  content: "🌙";
+  text-shadow: 0 0 0 #fff;
   transform: translateX(24px);
 }
 
