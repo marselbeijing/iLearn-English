@@ -4597,14 +4597,17 @@ body:not([data-theme="dark"]) {
 
 .stat-card {
     background: var(--card-bg);
-    border-radius: 12px;
-    padding: 0.75rem;
+    border-radius: 16px;
+    padding: 1rem;
     border: 1px solid var(--border-color);
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     transition: transform 0.2s ease;
-    min-height: 60px;
+    aspect-ratio: 1;
+    text-align: center;
 }
 
 .stat-card:hover {
@@ -4613,18 +4616,19 @@ body:not([data-theme="dark"]) {
 }
 
 .stat-icon {
-    font-size: 1.5rem;
-    width: 40px;
-    height: 40px;
+    font-size: 1.2rem;
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgba(var(--primary-color-rgb), 0.1);
-    border-radius: 12px;
+    border-radius: 8px;
+    flex-shrink: 0;
 }
 
 .stat-info {
-    flex: 1;
+    display: contents;
 }
 
 .stat-value {

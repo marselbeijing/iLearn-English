@@ -4599,14 +4599,17 @@ body:not([data-theme="dark"]) {
 
 .stat-card {
     background: var(--card-bg);
-    border-radius: 12px;
-    padding: 0.75rem;
+    border-radius: 16px;
+    padding: 1rem;
     border: 1px solid var(--border-color);
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     transition: transform 0.2s ease;
-    min-height: 60px;
+    aspect-ratio: 1;
+    text-align: center;
 }
 
 .stat-card:hover {
@@ -4627,7 +4630,7 @@ body:not([data-theme="dark"]) {
 }
 
 .stat-info {
-    flex: 1;
+    display: contents;
 }
 
 .stat-value {
